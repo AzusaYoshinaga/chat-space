@@ -45,7 +45,7 @@
 
 
 
-##groupsテーブル
+### groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
