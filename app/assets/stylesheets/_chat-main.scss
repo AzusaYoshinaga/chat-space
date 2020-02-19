@@ -5,6 +5,9 @@
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
+    .menmeber__name {
+      padding-right: ５px;
+    }
     .left-header{
       float: left;
       &__name{
@@ -20,9 +23,9 @@
         color: $main_light_gray;
         font-size: 12px;
         margin-top: 15px;
-        .member{
+        .member__name{
           display: inline-block;
-          padding-right: 5px;        
+          padding-right: 5px;
         }
       }
     }
