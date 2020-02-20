@@ -32,9 +32,9 @@ $(function(){
     })
 
     .done(function(data){
-
+      var class_name = ".group_id_" + data.group_id;
+      $(class_name).text(data.content);
       var html = buildHTML(data);     
-      
       $('.messages').append(html);          
       $('.messages').animate({scrollTop: $(".messages")[0].scrollHeight}, "fast");                 
       $('form')[0].reset();  
