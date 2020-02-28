@@ -68,8 +68,6 @@ $(function(){
       $.each(messages, function(i, message) {
         insertHTML += buildHTML(message)
         var class_name = ".group_id_" + message.group_id;
-        console.log("22");
-        console.log(class_name)
         $(class_name).text(message.content);
 
       });
