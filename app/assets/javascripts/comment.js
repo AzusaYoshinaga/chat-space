@@ -32,14 +32,14 @@ $(function(){
 
     .done(function(data){
       var class_name = ".group_id_" + data.group_id;
-      console.log("22");
-      console.log(class_name)
       $(class_name).text(data.content);
+
       var html = buildHTML(data);     
       $('.messages').append(html);          
       $('.messages').animate({scrollTop: $(".messages")[0].scrollHeight}, "fast");                 
       $('form')[0].reset();  
       $('.form__submit').prop('disabled', false);
+      
       $(class_name).text(data.content)
     })
     .fail(function(){
