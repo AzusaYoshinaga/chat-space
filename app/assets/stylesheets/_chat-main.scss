@@ -38,7 +38,7 @@
       margin-top: 28px;
       padding: 0 20px;
       &__button {
-        color: main_blue;
+        color: skyblue;
         text-decoration: none;
       }
     }     
@@ -51,7 +51,7 @@
     height: calc(100vh - 100px - 90px);
     overflow: auto;
     .message {
-      .upper-info {
+      .upper-message {
         display: flex;
         &__user-name {
           color: #434a54;
@@ -64,6 +64,7 @@
           padding-left: 10px;
         }
       }
+
       .message-text {
         margin-top: 10px;
         &__speak {
