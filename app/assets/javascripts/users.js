@@ -15,8 +15,9 @@ $(function() {
           var html_foot    = `</div>`;
           //メソッドの引数がオブジェクト(データがオブジェクト型であるならば)
           if (user instanceof Object) {
+              console.log(user)
               html_content = `<p class="chat-group-user__name">${ user.user_name }</p>
-                              <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${ user.id }" data-user-name="${ user.nickname }">追加</div>`;
+                              <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${ user.id }" data-user-name="${ user.user_name  }">追加</div>`;
   
           //もし引数userにデータがオブジェクト型以外 = 文字列データ "一致するユーザーが見つかりません"を使ってHTML要素を生成
           }else{
@@ -28,6 +29,7 @@ $(function() {
   
       //候補ユーザーをメンバーHTMLへの追加メソッド
       function addUserToMember(id, name) {
+          console.log(name)
           //ビューファイル(_form.html)で作っている構造と同一にする必要あり = cssを正しく当てるため
           //<input name='group[user_ids][]' type='hidden' value= ユーザーのid番号 > = この記述があることでupdateアクションへ渡すparamsにグループユーザー構成配列へ該当ユーザー番号が挿入できる
           var html = `<div class='chat-group-user clearfix' id="chat-group-user-${ id }">
