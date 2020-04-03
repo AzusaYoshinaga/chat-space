@@ -30,7 +30,10 @@
           %input{name: 'group[user_ids][]', type: 'hidden', value: user.id}       
           .chat-group-user__name
             = user.name
-          .chat-group-user__btn.chat-group-user__btn--remove 削除
+          -# グループ作成者じゃなければ
+            .chat-group-user__btn.chat-group-user__btn--remove 削除
+
+
 
   .chat-group-form__field.clearfix
     .chat-group-form__field--left
