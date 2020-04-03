@@ -51,8 +51,10 @@
     height: calc(100vh - 100px - 90px);
     overflow: auto;
     .message {
+       padding-bottom: 50px;
       .upper-message {
         display: flex;
+        padding-bottom: 10px;
         &__user-name {
           color: #434a54;
           font-size: 16px;
