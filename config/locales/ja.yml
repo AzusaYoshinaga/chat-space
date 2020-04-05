@@ -142,9 +142,9 @@ ja:
     select:
       prompt: 選択してください
     submit:
-      create: Save
+      create: 登録する
       submit: 保存する
-      update: Save
+      update: 更新する
   number:
     currency:
       format:
