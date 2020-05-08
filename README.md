@@ -41,7 +41,7 @@
 ### Association
 - has_many :members
 - has_many :messages
-- has_many :groups, throuh::members
+- has_many :groups, through::members
 
 
 
@@ -53,7 +53,7 @@
 |body|text|nill: false|
 
 ### Association
-- has_many: users throuh::members
+- has_many: users through::members
 - has_many: members
 - has_many: messages
 
